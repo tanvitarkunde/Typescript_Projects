@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="framework.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+        h1{
+            font-style: italic;
+            color: midnightblue;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <h1><u>LEVEL MONITORING OF CHEMICAL PLANT</u></h1>
+     
+ <canvas id="mycanvas" width="1200" height="600" style="border: solid;border-color: black;"></canvas>    <!--Creating canvas-->
+  <br>
+
+  <!--Upper Tank slider-->
+ <div class="slidecontainer">
+ 
+  <input type="range"  oninput="function1()" onchange="function1()"min="1" max="149" value="75" class="slider" id="myRange"  style="height: 150px; -webkit-appearance: slider-vertical;position:absolute; left:150px; top:235px; ">
+ </div>
+
+  <!--Lower Tank slider-->
+  <div class="slidecontainer">
+   
+    <input type="range"  oninput="function2()" onchange="function2()"min="1" max="149" value="75" class="slider" id="myRange1" style="height: 150px; -webkit-appearance: slider-vertical;position:absolute; left:150px; top:430px; ">
+    
+  </div>
+</body>
+</html>
